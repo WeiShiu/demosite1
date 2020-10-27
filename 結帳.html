@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="購物網站介面上線.css">
+  <title>Yoyoyu_shop</title>
+
+
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-light bg-white ">
+    <a class="navbar-brand "
+      href="index.html"><i
+        class="fas fa-chess-knight fa-2x mr-2">Yoyoyu</i></a>
+
+  </nav>
+
+  <div class="container  main-contant  py-5">
+    <h1 class="text-center text-secondary mb-3">Yoyoy_shop 結帳</h1>
+    <div class="form-row text-center">
+      <div class="col-12 col-sm">
+        <div class="alert alert-success alert-rounded" role="alert">
+          1.輸入訂單資料
+        </div>
+      </div>
+      <div class="col-12 col-sm">
+        <div class="alert alert-secondary alert-rounded" role="alert">
+          1.金流付款
+        </div>
+      </div>
+      <div class="col-12 col-sm">
+        <div class="alert alert-secondary alert-rounded" role="alert">
+          3.完成
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-8">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header d-flex" id="headingOne">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                顯示購物車細節
+              </button>
+              <div class="ml-auto"><span class="h3">$650</span></div>
+            </div>
+          </div>
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th width="350">商品名稱</th>
+                  <th width="100">數量</th>
+                  <th width="90">小計</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="align-middle" width="50"><a href="#" data-toggle="modal" data-target="#removeModal"
+                      data-title="確認刪除這項產品?"><i class="far fa-trash-alt"></i></a></td>
+                  <td class="py-1" width="130"><img
+                      src="https://scontent.ftpe7-3.fna.fbcdn.net/v/t1.0-9/119841083_3216673365094796_3406003722215775945_n.jpg?_nc_cat=108&_nc_sid=825194&_nc_ohc=GjvGwvhVZLUAX_donyg&_nc_ht=scontent.ftpe7-3.fna&oh=fb8f1b3c3089c122e2b1f4efa3f42ab3&oe=5F9ED4B1"
+                      width="110" alt="" class="img-thumbnail"></td>
+                  <td class="align-middle">兒童西裝</td>
+                  <td class="align-middle">1件</td>
+                  <td class="text-right align-middle">$590</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td class="text-right">運費</td>
+                  <th class="text-right">$60</th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td class="text-right">合計</td>
+                  <th class="text-right">$650</th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+  
+
+          
+            <h4 class="text-center text-secondary bg-light mb-2 mt-4 py-2">訂購人資訊</h4>
+            
+
+
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="username">姓名</label>
+                <input type="username" class="form-control" placeholder="name" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" placeholder="emails" required>
+              </div>
+            </div>
+          
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="country">國家</label>
+                <select type="country" class="form-control" id="country" required>
+                <option value="">台灣</option>
+                <option value="">澳洲</option>
+              </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="city">城市</label>
+                <select type="country" class="form-control" id="city" required>
+                <option value="">嘉義</option>
+                <option value="">台南</option>
+              </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="emailaddress">郵遞區號</label>
+                <input type="emailaddress" class="form-control" id="emailaddress" required>
+              </div>
+            </div>
+          
+          
+            <div class="form-group">
+              <label for="address">地址</label>
+              <input type="address" class="form-control" placeholder="嘉義布袋鎮" required>
+            </div>
+           
+          
+            <div class="d-flex justify-content-end">
+              <div class="btn-group">
+                <a href="index商品.html" class="btn btn-secondary mr-1">繼續選購</a>              
+                <a href="結帳完成.html" class="btn btn-primary mr-1">確定付款</a>
+            <!---   
+            <button type="submit" class="btn btn-primary">確認付款</button>
+            -->
+            
+            </div>
+              </div>
+            </div>
+          </form>
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="bg-light py-4 mt-3">
+      <div class="container text-center text-secondary">
+        <div>
+          <h5>© Copyright 2020 Yoyoyu_shop
+            <a href="https://www.facebook.com/groups/2029978400460311"><i
+                class="fab fa-facebook-square text-secondary"></i></a>
+            <a href=""> <i class="fab fa-instagram text-secondary"></i></a>
+            <a href=""><i class="fab fa-line text-secondary"></i></a>
+          </h5>
+        </div>
+
+      </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
